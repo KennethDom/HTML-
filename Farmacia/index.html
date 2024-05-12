@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="imagenes/logo.jpg"> 
+    <title>Farmacos</title>
+</head>
+<body>
+    <!-- Formulario para la fecha de la receta -->
+    <fieldset>
+        <label>Fecha de Recibo</label>
+        <br>
+        <input type="date" name="fecha" >
+        <br>
+        <label>Numero de Receta</label>
+        <br>
+        <input type="text" name="fecha" >
+    </fieldset>
+
+    <!-- Formulario para el tipo de movimiento que hara el doctor -->
+    <fieldset>
+        <label>Tipo de Movimiento</label>
+        <br>
+        <input type="radio" name="movimiento" value="Venta">Receta
+        <input type="radio" name="movimiento" value="Recepcion">Justificante Medico
+        <input type="radio" name="movimiento" value="Otro">Otro
+    </fieldset>
+
+        <!-- Formulario para los datos del Paciente -->
+    <fieldset>
+        <label>Datos del Paciente</label>
+        <br>
+        <label>Nombre(s)</label>
+        <br>
+        <input type="text" name="nombre" >
+        <br>
+        <label>Apellidos(s)</label>
+        <br>
+        <input type="text" name="apelidos" >
+        <br>
+        <label>Edad</label>
+        <br>
+        <input type="number" name="edad" >
+        <br>
+        <label>Peso</label>
+        <br>
+        <input type="number" name="edad" placeholder="kg">
+        <br>
+        <label>Sexo</label>
+        <br>
+        <select id="sexo" name="sexo">
+            <option value="" selected="selected">- Selecciona -</option>
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+            <option value="otro">Otro</option>
+        </select>
+        <br>
+        <label>Alergias</label>
+        <br>
+        <input type="radio" name="movimiento" value="si">Si
+        <input type="radio" name="movimiento" value="no">No
+    </fieldset>
+
+    <!-- Formulario para los datos del Medico -->
+    <fieldset>
+        <label>Datos del Medico</label>
+        <br>
+        <label>Nombre(s)</label>
+        <br>
+        <input type="text" name="nombre" >
+        <br>
+        <label>Apellidos(s)</label>
+        <br>
+        <input type="text" name="apelidos" >
+        <br>
+        <label>Especialidad</label>
+        <br>
+        <select id="especialidad" name="especialidad">
+            <option value="" selected="selected">- Selecciona -</option>
+            <option value="alergología">Alergología</option>
+            <option value="anestesiología">Anestesiología</option>
+            <option value="angiología">Angiología</option>
+            <option value="endocrinología">Endocrinología</option>
+            <option value="estomatología">Estomatología</option>
+            <option value="farmacología">Farmacología Clínica</option>
+            <option value="gastroenterología">Gastroenterología</option>
+            <option value="genética">Genética</option>
+            <option value="geriatría">Geriatría</option>
+            <option value="hematología">Hematología</option>
+            <option value="hepatología">Hepatología</option>
+            <option value="infectología">Infectología</option>
+        </select>
+    </fieldset>
+
+    <!-- Formulario para los datos de la receta -->
+<fieldset>
+    <label>Datos de la Prescripción</label>
+    <br>
+    <label>Malestar</label>
+    <br>
+    <input type="text" name="malestar" >
+    <br>
+    <label>Medicamento</label>
+    <br>
+    <input type="text" name="medicamento" >
+    <br>
+    <label>Cantidad</label>
+    <br>
+    <input type="number" name="cant">
+    <br>    
+</fieldset>
+
+</body>
+</html>
