@@ -1,0 +1,33 @@
+body {
+    background-color: blue;
+    color: yellow;
+}
+
+div.uno {
+    background-color: #00f;
+    border: 1px solid #ff9;
+    padding: 1px;
+    font-size: 2cm;
+}
+
+a:link{
+    color: red;
+    text-decoration: none;
+}
+
+a:visited{
+    color: aqua;
+}
+
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+p.primera:first-line {
+    font-variant: small-caps;
+}
+
+p:first-letter{
+    font-size: 2em;
+}

@@ -1,0 +1,49 @@
+div#contiene{
+    width: 800px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    border: 1px solid #bbb;
+    overflow:hidden;
+}
+
+div#espacioIzq, div#espacioDer{
+    float: left;
+    background-color: #69c;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+div#imagen{
+    float: left;
+    margin: 0 auto;
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+div#texto{
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: #69c;
+    text-align: center;
+    font-style: normal;
+    font-size: medium absolute;
+    /* investigar el termino serif sans-serif */
+    font-variant: normal;
+    font-weight: 900;
+    text-decoration:overline;
+    text-align: center;
+    text-indent: 0px;
+    text-transform:none;
+    
+}
+
+p.limpio{
+    clear: both;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}

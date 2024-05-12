@@ -1,0 +1,578 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #bbb;
+    background-image: url('../images/page_background.jpg');
+    margin: 0;
+    padding: 0;
+    /* Selector de cuerpo
+    Familia del tipo de letra: Georgia serif
+    Fondo: gris triple b url en imágenes fondo de página de tipo jpg
+    Margen: cero
+    Padding: 0 */
+}
+
+div#outerDiv{
+    width: 770px;
+    margin: 0 auto;
+    background-color: #fff;
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+/* Selector de identificador outerDiv 
+Ancho: 770 píxeles
+Margen: 0 automático
+Fondo: gris triple F, qrl en imágenes banner de tipo jpg, no repetir*/
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 1ex normal;
+    /*
+Selector o compuesto de párrafo encabezados 1 a 6 ítem de lista
+Margen: un tamaño de X año normal*/
+}
+
+a{
+    text-decoration: none;
+    color: #b36b00;
+    /* Selector de vínculo
+Decoración de texto: ninguno
+Color: b36 b00 en hexadecimal*/
+
+}
+a:hover,a:active{
+    color: #566440;
+    border-bottom: 1px dotted #566440;
+    /* Pseudo selectores compuestos ratón sobre vinculo, vínculo activo 
+Color: 566 440
+Borde inferior: un píxel, punteado, 566 440 en hexadecimal */  
+}
+
+div#header{
+    height: 110px;
+    position: relative;
+    /* Comentario encabezamiento
+
+Selector de identificador de encabezamiento
+Altura: 110 píxeles
+Posición: relativa */
+}
+
+div#midBanner{
+    height: 90px;
+    /* Selector de identificador midBanner 
+Altura: 90 píxeles  */
+}
+
+div#content{
+    background-color: #fff;
+    padding: 5px;
+    /* Selector de identificador content 
+Color del fondo: Gris triple f en hexadecimal 
+Padding: 5 píxeles  */
+}
+
+div#contactButton{
+    position: absolute;
+    left: 650px;
+    top: 0;
+    /* Comentario enlace de contacto 
+
+    Selector de identificador contactButton 
+    Posición: Absoluto
+    Izquierda: 650 píxeles 
+    Superior: 0  */
+}
+div#contactButton a{
+    height: 29px;
+    width: 86px;
+    display: block;
+    background: url('../images/GroundswellSprites.png') 0px 0px;
+    border: none;
+    /* Selector descendente vínculo de identificador contactButton 
+Altura 29 píxeles 
+Ancho 86 píxeles 
+Despliegue en bloque 
+Fondo url a conjunto de Spirites tipo png en imágenes 0 píxeles 0 píxeles 
+Borde ninguno  */
+}
+
+div#contactButton a:hover{
+    background-position: 0px -29px;
+    /* Selector descendente de pseudo selector ratón sobre vínculo de identificador contactButton 
+    Posición del fondo 0 píxeles menos 29 píxeles */
+}
+
+div#mainMenu{
+    position: absolute;
+    left:320px;
+    bottom: 0px;
+    /* Comentario menú principal 
+
+Selector de identificador mainMenu 
+Posición absoluta 
+Izquierda 320 píxeles 
+Fondo 0  */
+
+}
+
+div#mainMenu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    /* Selector descendente de lista no ordenada en identificador mainMenu 
+Estilo de lista ninguno 
+Margen cero
+Padding 0  */
+}
+
+div#mainMenu ul li {
+    float: left;
+    margin: 0;
+    padding: 0;
+/* Selector descendente de ítem de lista en identificador mainMenu 
+Flotante izquierda 
+Margen cero
+Padding 0  */
+
+}
+
+div#mainMenu ul li a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px 0 30px;
+    margin: right 10px;
+    line-height: 25px;
+    background: url('../images/GroundswellSprites.png') -286px -25px;
+    border: none;
+
+    /* Selector descendente de vínculo en identificador mainMenu 
+Familia de tipo: Trebuchet MS, sans-serif 
+Despliegue bloque 
+Color gris triple f en hexadecimal 
+Decoración del texto ninguna 
+Padding 0 15 píxeles 0 30 píxeles
+Margen derecho 10 píxeles 
+Altura de la línea 25 píxeles 
+Fondo url a conjunto de Spirites tipo png en imágenes menos 286 píxeles menos 25 píxeles 
+Borde ninguno  */
+}
+
+#mainMenu ul li a.current{
+    color:#f8b449;
+    background-position: -286px 0px;
+    /* Selector descendente de vínculo de clase current en identificador mainMenu 
+Color f8b 449 en hexadecimal 
+Posición del fondo menos 286 píxeles 0  */
+}
+
+div#mainMenu a:hover{
+    margin-top: -5px;
+    height: 30px;
+    background-position: -86px 0px;
+    color: #aaa;
+    line-height: 25px;
+    /* Selector descendente de pseudo vínculo actual en identificador mainMenu 
+Margen Superior menos 5 píxeles 
+Alto 30 píxeles 
+Posición del fondo menos 86 píxeles 0 píxeles 
+Color gris triple a en hexadecimal 
+Altura de línea 25 píxeles  */
+}
+
+.current#mainMenu a:hover{
+    cursor: default;
+    /* Selector descendente de raton sobre vínculo de clase current en identificador mainMenu 
+Cursor por defecto */
+}
+
+div#mainContent{
+    float: left;
+    width: 430px;
+    margin: 0px 0px;
+    padding: 0px 15px;
+    
+/* Comentario contenido principal 
+
+Selector de identificador mainContent 
+Flotante izquierda 
+Ancho 430 píxeles 
+Margen 0 0 
+Padding 0 15 píxeles  */
+}
+
+div#mainContent p{
+    font-size: 0.9em;
+    line-height: 1.4em;
+    color: black;
+    margin: 1ex 0;
+    /* Selector descendente de párrafo en identificador mainContent 
+Tamaño del tipo 0.9 tamaño del tipo 
+Altura de la línea 1.4 tamaño del tipo 
+Color negro 
+margen 1 tamaño de X   0  */
+}
+
+div#mainContent h1, #mainContent h2, #mainContent h3, #mainContent h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* Selector compuesto de selector descendente encabezado 1 en identificador mainContent y selector descendente encabezado 2 en identificador mainContent y selector descendente encabezado 3 en identificador mainContent y selector descendente encabezado 4 en identificador mainContent 
+Familia de tipo: Trebuchet MS, sans-serif  */
+}
+
+div#mainContent h1{
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #1b9d95;
+    margin: 0 0 0.4ex 0;
+    /* Selector descendente de encabezado 1 en identificador mainContent 
+Tamaño del tipo 1.6 tamaño de tipo 
+Peso de tipo negrita 
+Color 1b9 d95 en hexadecimal 
+Margen  0   0   0.4 tamaño de X   0  */
+}
+
+div#mainContent h2{
+    font-size: 1.2em;
+    color: #3c3809;
+    margin: 0.4ex  0;
+    /* Selector descendente de encabezado 2 en identificador mainContent 
+Tamaño del tipo 1.2 tamaño de tipo 
+Color 3c3 809 en hexadecimal 
+Margen  0.4 tamaño de X   0  */
+}
+div#mainContent h4{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #666;
+    margin: 1ex 0 -0.2ex 0;
+    /* Selector descendente de encabezado 4 en identificador mainContent 
+Tamaño del tipo 1.1 tamaño de tipo 
+Peso de tipo negrita
+Color 666 en hexadecimal 
+Margen  1 tamaño de x 0  menos .2 tamaño de X   0  */
+}
+
+div#mainContent ul{
+    font-size: 0.9em;
+    margin: 2ex 0 2ex 1em;
+    
+/* Selector descendente de lista no definida en identificador mainContent 
+tamaño del tipo 0.9 tamaño de tipo 
+margen 2 tamaño de x 0  2 tamaño de x   1 Tamaño de tipo */
+}
+
+div#leftMenu{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0;
+    /* Comentario contenido principal menú izquierdo 
+
+Selector descendente de clase leftMenu 
+Familia del tipo: Trebuchet MS, sans-serif 
+Margen superior cero  */
+}
+
+.leftMenu{
+    color: #566400; 
+    /*
+Selector descendente de clase leftMenu y in clause 
+Color 566 400 en hexadecimal           Preguntar a profe*/
+}
+
+.leftMenu a:hover{
+    color:#b36b00 x none;
+    border: none;
+    /* Selector descendente de clase leftMenu y pseudo selector ratón sobre vínculo 
+Color b36 b00 en hexadecimal 
+preguntar al profe que es lo de por de ninguno
+Por de ninguno aqui era border:none */
+}
+
+ul#gearSubNav{
+    width: 340px;
+    margin: 0 auto;
+    list-style: none;
+    /* Comentario sub navegación 
+
+Selector de identificador gearSubNav 
+Ancho 340 píxeles 
+Margen cero Auto 
+Estilo de lista ninguno  */
+}
+
+ul#gearSubNav li{
+    float: left;
+    margin: 0;
+    padding: 0;
+    /* Selector descendente de ítem de lista en identificador gearSubNav 
+Flotar izquierda 
+margen 0 
+padding 0  */
+}
+
+ul#gearSubNav a{
+    display: block;
+    width: 70px;
+    height: 20px;
+    font-family: "orator std", Orator, sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 100px;
+    margin-right: 20px;
+    border: none;
+    background: url('../images/GroundswellSprites.png');
+    /* Selector descendente de vínculo en identificador gearSubNav 
+Despliegue bloque 
+Ancho 70 píxeles 
+Alto 20 píxeles 
+Familia del tipo: orator std, orator, sans-serif 
+Del tipo 0.9 tamaño de tipo 
+Alineación del texto centrada 
+Padding Superior 100 píxeles 
+Margen derecho 20 píxeles 
+Borde ninguno 
+Fondo url a conjunto de Spirites tipo png en imágenes  */
+}
+
+#gearSubNav a.last{
+    margin-right: 0;
+    /* Selector descendente de vínculo de clase last en identificador gearSubNav 
+Margen derecho 0  */
+}
+
+#gearSubNav a.boards{
+    background-position: -490px -60px;
+
+    /* Comentario suvnavegación de iconos 
+Selector descendente de vínculo clase boards en gearSubNav 
+Posición del fondo menos 490 píxeles menos 60 píxeles  */
+}
+
+#gearSubNav a.swimwear{
+    background-position: -210px -60px;
+    /* Selector descendente de vínculo clase swimwear en gearSubNav 
+Posición del fondo menos 210 píxeles menos 60 píxeles  */
+}
+
+#gearSubNav a.wetsuits{
+    background-position: -70px -60px;
+    /* Selector descendente de vínculo clase wetsuits en gearSubNav 
+Posición del fondo menos 70 píxeles menos 60 píxeles  */
+}
+
+#gearSubNav a.etc{
+    background-position: -350px -60px;
+    /* Selector descendente de vínculo clase etc en gearSubNav 
+Posición del fondo menos 350 píxeles menos 60 píxeles  */
+}
+
+#gearSubNav a.boards:hover{
+    background-position: -420px -60px;
+    /* Selector descendente de seudoselector raton sobre vínculo clase boards en gearSubNav 
+Posición del fondo menos 420 píxeles menos 60 píxeles*/  
+} 
+
+#gearSubNav a.swimwear:hover{
+    background-position: -140px -60px;
+    /* Selector descendente de seudoselector raton sobre vínculo clase swimwear en gearSubNav 
+Posición del fondo menos 140 píxeles menos 60 píxeles  */
+}   
+
+#gearSubNav a.wetsuits:hover{
+    background-position: 0px -60px;
+    /* Selector descendente de seudoselector raton sobre vínculo clase wetsuits en gearSubNav 
+Posición del fondo menos 0 píxeles menos 60 píxeles  */
+}
+
+#gearSubNav a.etc:hover{
+    background-position: -280px -60px;
+    /* Selector descendente de seudoselector raton sobre vínculo clase etc en gearSubNav 
+Posición del fondo menos 280 píxeles menos 60 píxeles  */
+}
+
+#gearFloatingImage{
+    float: left;
+    padding: 15px;
+    /* Comentario caja de ventas 
+
+Selector de identificador gearFloaringImage 
+Flotar a la izquierda 
+Padding 15 píxeles  */
+}
+
+#gearDesc{
+    float: right;
+    width: 260px;
+    padding-top: 20px;
+    /* Selector de identificador gearDesc 
+Flotar a la derecha 
+Ancho 260 píxeles 
+Padding Superior 20 píxeles  */
+}
+
+#gearDesc h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color: #c47500;
+    border-bottom: 1px solid #334;
+    padding-bottom: 0.2;
+    margin:0;
+    /* Selector de identificador descendente cabezada de Tercer nivel en identificador gearDesc 
+Familia del tipo de letra Georgia, Times New Román, Times, serif 
+Tamaño del tipo 1.2 tamaño de tipo 
+Color c47 500 en hexadecimal 
+Borde inferior un píxel sólido 344 en hexadecimal 
+Padding inferior 0.2 tamaño de tipo 
+Margen 0  */
+}
+
+#gearDesc p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.8em;
+    /* Selector descendente de párrafo en identificador gearDesc 
+Familia del tipo de letra Trebuchet mS, sans-serif 
+Tamaño del tipo .8 tamaño de tipo  */
+}
+
+#gearDesc p.price{
+    text-align: right;
+    font-size: 1.2em;
+} 
+    /* Selector descendente de párrafo de clase price en identificador gearDesc 
+Alineación de texto derecha 
+Tamaño del tipo 1.2 tamaño de tipo  */
+
+#sideBar{
+    float: right;
+    width: 265px;
+    padding: 0 10px;
+    margin: 0;
+    border-left: 1px solid #aaa;
+        /* Comentario barra lateral 
+
+Selector de identificador sideBar 
+Flotar a la derecha 
+Ancho 265 píxeles 
+Padding 0 10 píxeles 
+Margen 0 
+Borde izquierdo sólido color gris triple a en hexadecimal un píxel  */
+}
+
+#sideBar p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:0.8em;
+    line-height: 1.2em;
+    color: #666;
+    margin: 0 0 3em 0;
+    /* Selector descendente de párrafo en identificador sideBar 
+Familia del tipo de letra Trebuchet mS, sans-serif 
+Tamaño del tipo 0.8 tamaño de tipo 
+Alto de línea 1.2 tamaño de tipo 
+Color gris triple 6 en hexadecimal 
+Margen 0 0 3 tamaño de tipo 0  */
+}
+
+#sideBar  h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+    color: #1b9d95;
+    text-align: left;
+    margin: 1ex 0 0.5ex 0 ;
+    /* Selector descendente de encabecado nivel tres en identificador sideBar 
+Familia del tipo de letra Trebuchet MS, Arial, Helvetica, sans-serif 
+Tamaño del tipo 1 tamaño de tipo 
+Color 1b9 d95 en hexadecimal 
+Alineación de texto izquierda
+Margen 1 tamaño de X 0 0.5 tamaño de X 0  */
+}
+
+#siderBar img{
+    margin: 0 25px;
+    /* Selector descendente de imagen en identificador sideBar 
+Margen 0 25 píxeles  */
+}
+
+#sideBar img.photo{
+    padding: 5px;
+    border: 1px solid #999;
+    /* Selector descendente imagen clase photo identificador sideBar 
+Padding 5 píxeles 
+Borde un píxel sólido color gris triple 9 en hexadecimal  */
+}
+
+#sideBar ol{
+    margin:0.5em 1.5em 0;
+    /* Selector descendente de lista ordenada en identificador sideBar 
+Margen .5 tamaño de tipo 1.5 tamaño de tipo 0  */
+}
+
+#sideBar ol li{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.8em;
+    color: #666;
+    margin:0.2em 0.5em;
+    /* Selector descendente de ítem de lista en identificador sideBar 
+Familia de tipo Trebuchet MS, sans-serif 
+Tamaño del tipo 0.8 tamaño de tipo 
+Color gris triple 6 en hexadecimal 
+Margen .2 tamaño de tipo .5 tamaño de tipo  */
+}
+
+div#footer{
+    clear: both;
+    background: transparent;
+    margin: 0 auto;
+    padding: 5px;
+    /* Comentario pie de página 
+
+
+    Selector de identificador footer 
+    Claro anbos 
+    Fondo transparente 
+    Margen 0 auto 
+    Padding 5 píxeles */
+}
+
+div#footer p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.75em;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    /* Selector descendente de párrafo en identificador footer 
+    Familia del tipo de letra Trebuchet mS, sans-serif 
+    Tamaño del tipo .75 tamaño de tipo 
+    Color gris triple F en hexadecimal 
+    Margen 0 
+    Padding 0 
+    Alineación de texto centrado  */
+    
+}
+
+div#footer a{
+    color: #1b9d95;
+    text-decoration: none;
+    /* Selector descendente de vínculo en identificador footer 
+Color 1b9 d95 en hexadecimal 
+Decoración del texto ninguna  */
+}
+
+.clear {
+    clear:both;
+    height: 0;
+    margin:0;
+    padding:0;
+    
+/* Comentario estilo misceláneo 
+
+Selector de clase clear 
+Limpiar ambos 
+Alto 0 
+Margen 0 
+Padding 0  */
+
+}
+
+/* Especifciar tipo de fuente y donde se descarga */
+/* buscar como descargar una fuente y ponersela al html */
